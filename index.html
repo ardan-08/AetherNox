@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Registrasi</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      background: red;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    .radio-group input {
+      width: auto;
+    }
+
+    button {
+      width: 48%;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .submit {
+      background: green;
+    }
+
+    .reset {
+      background: gray;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<form action="https://formsubmit.co/wiwij9629@gmail.com" method="POST">
+
+  <!-- FIX PENTING FORM SUBMIT -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Data Registrasi Baru">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://youtu.be/iik25wqIuFo?si=xAwqsNcwOnDUwS10">
+
+  <h1>Form Registrasi</h1>
+
+  <label>Nama Anda</label>
+  <input type="text" name="Nama" placeholder="Masukkan nama lengkap" required>
+
+  <label>Email Anda</label>
+  <input type="email" name="Email" placeholder="Masukkan Email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+
+  <label>Password</label>
+  <input type="password" name="Password" placeholder="Masukkan password " required>
+
+  <label>Jenis Kelamin</label>
+  <div class="radio-group">
+    <input type="radio" name="Jenis Kelamin" value="Pria" required> Pria
+    <input type="radio" name="Jenis Kelamin" value="Wanita"> Wanita
+  </div>
+
+  <label>Agama</label>
+  <select name="Agama" required>
+    <option value="">--Pilih Agama--</option>
+    <option>Islam</option>
+    <option>Kristen</option>
+    <option>Katolik</option>
+    <option>Hindu</option>
+    <option>Buddha</option>
+    <option>Konghucu</option>
+  </select>
+
+  <label>Informasi Tambahan</label>
+  <textarea name="Informasi Tambahan" placeholder="Opsional..."></textarea>
+
+  <div class="btn-group">
+    <button type="submit" class="submit">Submit</button>
+    <button type="reset" class="reset">Reset</button>
+  </div>
+
+</form>
+
+</div>
+
+</body>
+</html>
